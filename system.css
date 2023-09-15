@@ -1,0 +1,103 @@
+/* Apply padding to the entire page container */
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.page-container {
+    padding: 10px;
+    margin: 20px;
+    /* Set the background image and positioning for the watermark */
+    background-image: url('WidgetCoLogo.gif');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 20%; /* Adjust the size of the watermark */
+}
+
+/* Basic styling for the release time and subtitle */
+.release-time {
+    text-align: center;
+    padding: 10px;
+    background-color: transparent; /* Remove background color */
+    font-size: 14px;
+    border: 1px solid black; /* Remove border */
+    border-radius: 5px;
+}
+
+/* Change background to navy and text to white on hover for the release-time section */
+.release-time:hover {
+    background-color: navy;
+    color: white;
+}
+
+/* Keep the contact text within the contact-block black */
+.release-time:hover .contact-block {
+    color: black;
+}
+
+/* Add underlines to "Press contact" and subheading */
+.subtitle, .contact-block h2, .sub-title {
+    text-decoration: underline;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+}
+
+/* Additional styling for the contact block */
+.contact-block {
+    padding: 10px;
+    font-size: 14px;
+    text-align: right;
+    float: right;
+}
+
+/* Remove background color and border from contact block */
+.contact-block {
+    background-color: transparent;
+    border: none;
+}
+
+/* Additional styling for title and contact layout */
+.title-and-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.main-title {
+    text-align: center; /* Center-align the text */
+    margin: 0 auto; /* Auto margins to center horizontally */
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+/* Styling for the footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: #ccc; /* Light grey text color */
+}
+
+/* Styling for the last section */
+article section:last-child {
+    border-left: 10px solid green; /* Thicker left border */
+    border-top: 2px solid green;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
+    background-color: #ffffcc; /* Less intense yellow */
+    padding: 20px;
+    margin-left: 20px; /* Offset to the right */
+}
+/* Change link color in the footer */
+footer a {
+    color: #888; /* Light grey link color */
+    text-decoration: underline;
+}
+
+/* Add a border to the bottom of each paragraph */
+article p {
+    border-bottom: 1px solid #888; /* Adjust the color and thickness as needed */
+    padding-bottom: 10px; /* Add some spacing between the paragraphs and the line */
+}
